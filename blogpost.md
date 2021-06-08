@@ -1,15 +1,16 @@
 # What Texts Whisper: Information retrieval and Prediction from Corporate Documents to Performance
 
 ## INTRO
-    Automatization of repetitive tasks represents the future of work. It contributes to transforming bussineses by increasing productivity and enabling humans to focus their attention on creative and more challenging problems.
 
-    Basicaly most of the ML algorithms that are used in production today were developed  back in the 80'. So what  has changed since then ? The real break out that happened in Machine Learning, and in Deep Learning is the fact that computational power used to train the largest models has doubled every 4 months since 2012. Also the data has become much more accesible and easier to crawl from websites and store . 
+Automatization of repetitive tasks represents the future of work. It contributes to transforming bussineses by increasing productivity and enabling humans to focus their attention on creative and more challenging problems.
 
-    The majority of algorithms used today needs to be trained with adnotated data to learn.THIS IS THE REASON WHY  labeling data is CONSIDERED  the engine that powers machine learning.BUT this process is expensive and time consuming. Fortunatelly, in our company, we have human experts specialized on key domains who manually addnotated our documents by extracting  bussiness specific citations. They helped us by building a adnotated citations database.
-    A citation is composed by a chunk of text from a document which the human expert adnotated as beeing relevant for  a certain business requirement and it has attached a label to it.
-    Note that at this point the addnotations are done at the document level, and are not very precise. It takes to read the entire document to find relevant citations and not all the information from the document is important for the requirement itself.
+Basicaly most of the ML algorithms that are used in production today were developed  back in the 80'. So what  has changed since then ? The real break out that happened in Machine Learning, and in Deep Learning is the fact that computational power used to train the largest models has doubled every 4 months since 2012. Also the data has become much more accesible and easier to crawl from websites and store . 
+
+The majority of algorithms used today needs to be trained with adnotated data to learn.THIS IS THE REASON WHY  labeling data is CONSIDERED  the engine that powers machine learning.BUT this process is expensive and time consuming. Fortunatelly, in our company, we have human experts specialized on key domains who manually addnotated our documents by extracting  bussiness specific citations. They helped us by building a adnotated citations database.
+A citation is composed by a chunk of text from a document which the human expert adnotated as beeing relevant for  a certain business requirement and it has attached a label to it.
+Note that at this point the addnotations are done at the document level, and are not very precise. It takes to read the entire document to find relevant citations and not all the information from the document is important for the requirement itself.
     
-  In our final solution we want to automatically filter all the irellevant information from the document.SO  We  extracted all paragraphs from documents and if the paragraph contains the citation we consider  the information from the paragraph as sufficient for the citation.AS WE CAN SEE  the dataset will contain paragraphs from the documents which have attached labels for specific requirements. HERE WE DEFINE a label as beeing the INDICATOR CODE PLUS a TICKBOX ID which serves as identifiers for the citation.
+In our final solution we want to automatically filter all the irellevant information from the document.SO  We  extracted all paragraphs from documents and if the paragraph contains the citation we consider  the information from the paragraph as sufficient for the citation.AS WE CAN SEE  the dataset will contain paragraphs from the documents which have attached labels for specific requirements. HERE WE DEFINE a label as beeing the INDICATOR CODE PLUS a TICKBOX ID which serves as identifiers for the citation.
 
 IN ORDER TO OBTAIN THE DATASET WE NEED A PROCESSING PIPELINE
 
